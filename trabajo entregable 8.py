@@ -13,12 +13,12 @@ class Comentario:
 
     def mostrar_atributos(self):
         fecha_hora_formateada = self.fecha_hora.strftime("%Y-%m-%d %H:%M")
-        print("id de comentario: " + str(self.id))
-        print("id de articulo: " + str(self.id_articulo))
-        print("id de usuario: " + str(self.id_usuario))
-        print("comentario: " + self.contenido)
-        print("fecha y hora del comentario: " + fecha_hora_formateada)
-        print("estado: " + self.estado)
+        print("id de comentario: ", self.id)
+        print("id de articulo: ", self.id_articulo)
+        print("id de usuario: ", self.id_usuario)
+        print("comentario: ", self.contenido)
+        print("fecha y hora del comentario: ", fecha_hora_formateada)
+        print("estado: ", self.estado)
 
     def cambiar_estado(self, nuevo_estado): #para cambiar de estado de arctivo a inactivo
         self.estado = nuevo_estado
